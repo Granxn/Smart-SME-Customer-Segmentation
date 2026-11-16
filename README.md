@@ -21,15 +21,14 @@
 
 ## 📊 3. ผลลัพธ์และการวิเคราะห์ข้อมูล (Insights & Visualizations)
 
-ระบบทำการสรุปพฤติกรรมของแต่ละกลุ่มออกมาใน 2 มิติสำคัญ เพื่อให้ทีมการตลาดนำไปใช้งานต่อได้ทันที:
+### จำนวนลูกค้าในแต่ละกลุ่ม
+แบ่งได้ 3 กลุ่ม: High-Value 15 คน / Regular 25 คน / At-Risk 10 คน
+![Customer Segmentation Distribution](images/recency_monetary_scatter.png.png)
 
-### มิติด้านธุรกิจ: รายได้รวมแยกตามกลุ่มลูกค้า
-แสดงให้เห็นว่ากลุ่มไหนคือผู้สร้างรายได้หลักให้กับร้านค้า เพื่อการจัดสรรงบประมาณโปรโมชั่นที่เหมาะสม
-![Total Revenue by Segment](images/total_revenue_chart.png.png)
-
-### มิติด้านเทคนิค: พฤติกรรมการกระจายตัวของข้อมูล (Recency vs Monetary)
-พิสูจน์ความแม่นยำของโมเดล K-Means ว่าสามารถจำแนกกลุ่มลูกค้าออกจากกันได้อย่างชัดเจน (Well-Separated) 
-![Recency vs Monetary Scatter Plot](images/recency_monetary_scatter.png.png)
+### รายได้รวม และการกระจายตัวของข้อมูล (Recency vs Monetary)
+- **ซ้าย:** รายได้รวมแยกตามกลุ่ม แสดงว่ากลุ่มไหนเป็นผู้สร้างรายได้หลัก เพื่อจัดสรรงบโปรโมชั่นให้เหมาะสม
+- **ขวา:** การกระจายตัวของลูกค้าแต่ละกลุ่ม ยืนยันว่าโมเดลแยกกลุ่มได้สอดคล้องกับนิยาม RFM (At-Risk ไม่ได้ซื้อนานที่สุด, High-Value ใช้จ่ายสูงที่สุด)
+![Revenue and Recency vs Monetary](images/total_revenue_chart.png.png)
 
 ---
 
